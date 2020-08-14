@@ -5,8 +5,6 @@ import java.sql.Timestamp;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
-@AllArgsConstructor
-@NoArgsConstructor
 public class BDto {
 	
 	int bId;
@@ -19,7 +17,27 @@ public class BDto {
 	int bStep;
 	int bIndent;
 	
+	public BDto() {
+		// TODO Auto-generated constructor stub
+	}
 	
+	
+
+	public BDto(int bId, String bName, String bTitle, String bContent, Timestamp bDate, int bHit, int bGroup, int bStep,
+			int bIndent) {
+		super();
+		this.bId = bId;
+		this.bName = bName;
+		this.bTitle = bTitle;
+		this.bContent = bContent;
+		this.bDate = bDate;
+		this.bHit = bHit;
+		this.bGroup = bGroup;
+		this.bStep = bStep;
+		this.bIndent = bIndent;
+	}
+
+
 
 	public int getbId() {
 		return bId;
