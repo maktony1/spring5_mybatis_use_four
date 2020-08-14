@@ -17,4 +17,5 @@ public class Bservice {
 		IBDao dao = sqlSession.getMapper(IBDao.class); //01010덩어리를 다이렉트로 때려박는다 (동적 로딩)
 		return dao.listDao();
 	}
+
 }
